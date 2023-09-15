@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Scroll Ke Atas/Bawah dengan Animasi Pelan dan Transisi</title>
+    <style>
+      body {
+        height: 3000px; /* Tinggi dummy untuk mengaktifkan scroll */
+      }
+
+      .go-down {
+        transition: opacity 0.3s, transform 0.3s;
+      }
+
+      .go-down.hidden {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      .ontop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <a
+      href="#"
+      class="go-down ontop"
+      id="scrollButton"
+    >
+      <img
+        src="assets/png/arrow-downUp.png"
+        alt=""
+      />
+    </a>
+
+    <script>
+      // Mendapatkan elemen tombol scroll
+      var scrollButton = document.getElementById('scrollButton');
+
+      // Menambahkan event listener untuk menggulir ke atas/bawah secara halus saat elemen diklik
+      scrollButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Mencegah tindakan default link
+
+        // Mendapatkan posisi scroll saat ini
+        var currentPosition = window.scrollY;
+
+        // Menghitung posisi target (ke atas atau ke bawah)
+        var targetPosition =
+          currentPosition === 0 ? document.body.scrollHeight : 0;
+
+        // Menggulir ke posisi target secara halus
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth',
+        });
+      });
+
+      // Menampilkan/menyembunyikan tombol scroll dengan efek transisi
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 100) {
+          // Ubah nilai ini sesuai dengan seberapa jauh scroll sebelum tombol muncul
+          scrollButton.classList.remove('hidden');
+        } else {
+          scrollButton.classList.add('hidden');
+        }
+      });
+    </script>
+  </body>
+</html>

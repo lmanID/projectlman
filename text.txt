@@ -1,0 +1,48 @@
+<button class="btn-accordion">
+    Honda Brio
+    <span class="icon"><i class="bx bx-chevron-left"></i></span>
+</button>
+<article class="brio panel">
+    <ul class="typesBrio list">
+    <li class="typeBrio"><span>Type</span></li>
+    </ul>
+    <ul class="pricesBrio list">
+    <li class="priceBrio"><span>Price</span></li>
+    </ul>
+</article>
+<button class="btn-accordion">
+    All New BR-V
+    <span class="icon"><i class="bx bx-chevron-left"></i></span>
+</button>
+<article class="brio panel">
+    <ul class="typesBrio list">
+    <li class="typeBrio"><span>Type</span></li>
+    </ul>
+    <ul class="pricesBrio list">
+    <li class="priceBrio"><span>Price</span></li>
+    </ul>
+</article>
+<button class="btn-accordion">
+    Honda CR-V
+    <span class="icon"><i class="bx bx-chevron-left"></i></span>
+</button>
+<button class="btn-accordion">
+    All New HR-V
+    <span class="icon"><i class="bx bx-chevron-left"></i></span>
+</button>
+<button class="btn-accordion">
+    Honda WR-V
+    <span class="icon"><i class="bx bx-chevron-left"></i></span>
+</button>
+<button class="btn-accordion">
+    Honda City Hatcback
+    <span class="icon"><i class="bx bx-chevron-left"></i></span>
+</button>
+<button class="btn-accordion">
+    Honda City
+    <span class="icon"><i class="bx bx-chevron-left"></i></span>
+</button>
+<button class="btn-accordion">
+    Honda Accord
+    <span class="icon"><i class="bx bx-chevron-left"></i></span>
+</button> -->
