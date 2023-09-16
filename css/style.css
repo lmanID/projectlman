@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Montserrat:ital,wght@0,500;0,600;0,700;1,400&family=Moulpali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Monda:wght@400;700&family=Montserrat:ital,wght@0,500;0,600;0,700;1,400&family=Moulpali&display=swap');
 
 :root {
   /* font size */
@@ -128,7 +128,7 @@ nav.active .nav-icon .btn_menu_toggle i {
 }
 
 .btn_menu_toggle i {
-  font-size: var(--size-h2);
+  font-size: var(--size-h1);
   color: var(--secondary-2-color);
 }
 .nav-menu {
@@ -179,7 +179,7 @@ nav.active .nav-icon .btn_menu_toggle i {
 
 /* =============================== MAIN =============================== */
 main {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-2-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,43 +187,59 @@ main {
 }
 
 .header-daftar-harga {
-  /* background-color: #e4182d; */
-  font-family: 'Montserrat', sans-serif;
+  background-color: var(--secondary-color);
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: var(--black01);
-  text-align: center;
-  margin-top: var(--mp01);
-  margin-bottom: var(--mp01);
-  font-size: var(--size-h1);
-  line-height: 120%;
+  /* text-align: center; */
+  padding: 32px 0;
+  padding-left: 16px;
+  margin-bottom: 8px;
+  font-size: 2.125em;
+  line-height: 46px;
+  /* letter-spacing: -0.8px; */
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(66, 66, 66, 0.3);
+  padding-bottom: 16px;
+}
+
+.header-daftar-harga .pml-pkl {
+  color: var(--black01);
+  font-size: 0.6em;
+  font-family: 'Moulpali', sans-serif;
+  border-bottom: solid 3px var(--primary-color);
+
+  /* padding-bottom: -4px; */
 }
 
 .accordions {
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   display: grid;
   row-gap: var(--mp07);
-  margin-bottom: var(--mp01);
+  /* margin-bottom: var(--mp01); */
 }
 
 .btn-accordion {
+  cursor: pointer;
   width: 100%;
-  font-family: 'Monda', sans-serif;
+  font-family: 'Moulpali', sans-serif;
   padding: var(--mp03);
-  font-size: var(--size-text1);
-  background-color: var(--secondary-2-color);
+  font-size: var(--size-h3);
+  background-color: var(--secondary-color);
   border-radius: var(--mp06);
   font-weight: 700;
   text-align: start;
-  color: var(--black01);
+  color: var(--black03);
   letter-spacing: -0.5px;
   position: relative;
   transition: 0.4s;
+  box-shadow: 1px 1px 4px rgba(66, 66, 66, 0.3);
 }
 
 .btn-accordion span {
   position: absolute;
   right: var(--mp03);
-  color: var(--black02);
+  color: var(--primary-color);
 }
 
 .btn-accordion span i {
@@ -245,7 +261,9 @@ main {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease-out;
+  /* border-bottom: 1px solid rgba(104, 104, 104, 0.2); */
   /* background-color: red; */
+  /* margin-bottom: 6px; */
 }
 .panel .list {
   font-family: 'Monda', sans-serif;
@@ -254,7 +272,7 @@ main {
 }
 .panel ul li {
   padding: 4px auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 4px;
   text-align: center;
   margin-bottom: var(--mp07);
@@ -262,6 +280,13 @@ main {
   font-weight: 600;
   font-size: var(--size-text2);
   color: var(--black01);
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.panel ul li:last-child {
+  margin-bottom: 12px;
 }
 .panel ul .type-header,
 .panel ul .price-header {
@@ -269,16 +294,21 @@ main {
   color: var(--secondary-color);
 }
 .catatan {
-  background-color: var(--secondary-2-color);
+  background-color: var(--secondary-color);
+  /* background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); */
   padding-top: var(--mp01);
   padding-bottom: var(--mp01);
-  padding-left: var(--mp04);
-  padding-right: var(--mp04);
+  padding-left: var(--mp05);
+  padding-right: var(--mp05);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: var(--mp06);
+  margin-top: 6px;
+  box-shadow: 1px 1px 4px rgba(66, 66, 66, 0.3);
 }
 
 .catatan p {
@@ -289,24 +319,25 @@ main {
 }
 
 .harga-otr {
-  font-size: var(--size-text3);
-  color: var(--black03);
+  font-size: var(--size-text2);
+  color: var(--black02);
 }
 
 .info-promo {
-  font-size: var(--size-text1);
+  font-size: var(--size-h2);
   margin: var(--mp04) auto;
-  color: var(--black01);
+  color: var(--primary-color);
 }
 
 .hub-kami {
+  font-family: 'Moulpali', sans-serif;
+  font-size: 32px;
   background-color: var(--primary-color);
   display: block;
-  width: 174px;
-  height: 35px;
-  border-radius: var(--mp06);
+  border-radius: var(--mp04);
   color: var(--secondary-2-color);
-  font-size: var(--size-text);
+  font-size: var(--size-h2);
+  padding: 2px 18px;
 }
 /* =============================== AKHIR MAIN =============================== */
 
@@ -316,15 +347,22 @@ footer {
   padding-top: 24px;
 }
 
+footer .description {
+  border-bottom: 1px solid var(--black02);
+
+  padding-bottom: 12px;
+}
+
 footer .honda-logo {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  margin-top: 32px;
   /* background-color: var(--black03); */
 }
 
 .header-footer {
   font-family: 'Moulpali', sans-serif;
-  font-size: var(--size-h2);
+  font-size: var(--size-h1);
   color: var(--secondary-2-color);
   font-weight: 500;
   margin-top: var(--mp01);
@@ -332,12 +370,12 @@ footer .honda-logo {
 }
 
 .title-footer {
-  color: var(--black02);
+  color: var(--black03);
+  margin-bottom: var(--mp01);
 }
 
 footer p {
   font-family: 'Moulpali', sans-serif;
-  max-width: 298px;
   line-height: 120%;
 }
 
@@ -347,12 +385,12 @@ footer p {
   font-family: 'Moulpali', sans-serif;
   font-weight: 500;
   line-height: 120%;
-  margin-top: var(--mp05);
+  margin-top: var(--mp03);
 }
 
 .title-td {
   font-size: var(--size-text3);
-  color: var(--black02);
+  color: var(--black03);
   margin-bottom: var(--mp05);
 }
 
@@ -370,7 +408,7 @@ footer p {
 
 .tentang-pengembang p {
   font-family: 'Moulpali', sans-serif;
-  color: var(--black02);
+  color: var(--black03);
   margin-top: var(--mp04);
   margin-bottom: var(--mp01);
 }

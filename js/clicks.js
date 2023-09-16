@@ -25,11 +25,11 @@ for (let i = 0; i < btn_accordions.length; i++) {
       panel.style.maxHeight = null;
       // Memutar ikon ke atas saat menutup panel
       arrowIcon[i].style.transform = 'rotate(0deg)';
-      arrowIcon[i].style.color = '#555555';
+      arrowIcon[i].style.color = '#e4182d';
     } else {
       panel.style.maxHeight = panel.scrollHeight + 'px';
       // Memutar ikon ke bawah 45 derajat saat membuka panel
-      arrowIcon[i].style.transform = 'rotate(-90deg)';
+      arrowIcon[i].style.transform = 'rotate(180deg)';
       arrowIcon[i].style.transformOrigin = 'center';
       arrowIcon[i].style.color = 'white';
     }

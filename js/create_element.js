@@ -12,8 +12,9 @@ function populateHondaData() {
       const button = document.createElement('button');
       button.className = 'btn-accordion';
       button.textContent = carName;
+      button.type = 'button';
       button.innerHTML +=
-        '<span class="icon"><i class="bx bx-chevron-left"></i></span>';
+        '<span class="icon"><i class="bx bx-chevron-up"></i></span>';
 
       // Membuat elemen artikel
       const article = document.createElement('article');
