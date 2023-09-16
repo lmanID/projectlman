@@ -321,6 +321,7 @@ main {
 .harga-otr {
   font-size: var(--size-text2);
   color: var(--black02);
+  margin-bottom: 8px;
 }
 
 .info-promo {
@@ -337,7 +338,8 @@ main {
   border-radius: var(--mp04);
   color: var(--secondary-2-color);
   font-size: var(--size-h2);
-  padding: 2px 18px;
+  font-weight: 600;
+  padding: 1px 18px;
 }
 /* =============================== AKHIR MAIN =============================== */
 
